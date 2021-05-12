@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Příjmení:</strong>
+  <%= @volunteer.Příjmení %>
+</p>
+
+<p>
+  <strong>Jméno:</strong>
+  <%= @volunteer.Jméno %>
+</p>
+
+<p>
+  <strong>Mail:</strong>
+  <%= @volunteer.Mail %>
+</p>
+
+<p>
+  <strong>Telefon:</strong>
+  <%= @volunteer.Telefon %>
+</p>
+
+<%= link_to 'Edit', edit_volunteer_path(@volunteer) %> |
+<%= link_to 'Back', volunteers_path %>
