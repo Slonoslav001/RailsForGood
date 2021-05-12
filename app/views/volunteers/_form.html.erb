@@ -1,0 +1,39 @@
+<%= form_with(model: volunteer) do |form| %>
+  <% if volunteer.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(volunteer.errors.count, "error") %> prohibited this volunteer from being saved:</h2>
+
+      <ul>
+        <% volunteer.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class = "row">
+    <div class="field mb-3 col form-group">
+      <%= form.label :Jméno, class:"form-label" %>
+      <%= form.text_field :Jméno, class:"form-control" %>
+    </div>
+    <div class="field mb-3 col form-group">
+      <%= form.label :Příjmení, class:"form-label" %>
+      <%= form.text_field :Příjmení, class:"form-control" %>
+    </div>
+  </div>
+  <div class = "row">
+    <div class="field mb-3 col form-group">
+      <%= form.label :Mail, class:"form-label" %>
+      <%= form.text_field :Mail, class:"form-control" %>
+    </div>
+
+    <div class="field mb-3 col form-group">
+      <%= form.label :Telefon, class:"form-label" %>
+      <%= form.text_field :Telefon, class:"form-control" %>
+    </div>
+  </div>
+
+  <div class="actions mb-3">
+    <%= form.submit class:"btn btn-dark"%>
+  </div>
+<% end %>

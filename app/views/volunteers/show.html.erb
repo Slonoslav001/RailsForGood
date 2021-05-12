@@ -1,0 +1,11 @@
+<p id="notice"><%= notice %></p>
+
+<div class="jumbotron">
+  <h1 class="display-4"><%= @volunteer.Jméno %> <%= @volunteer.Příjmení %></h1>
+  <hr class="my-4">
+  <p class="lead">
+    <p><strong>Tel.: </strong><%= @volunteer.Telefon %> | <strong>E-mail: </strong><%= @volunteer.Mail %></p>
+  </p>
+  <%= link_to 'Edit', edit_volunteer_path(@volunteer), class:"btn btn-dark" %> 
+  <%= link_to 'Back', volunteers_path, class:"btn btn-secondary" %>
+</div>

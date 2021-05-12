@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :volunteers
   root 'home#index'
   get "home/about"
   get "home/form"
