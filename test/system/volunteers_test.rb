@@ -12,13 +12,13 @@ class VolunteersTest < ApplicationSystemTestCase
 
   test "creating a Volunteer" do
     visit volunteers_url
-    click_on "New Volunteer"
+    click_on "Nový Dobrovolník"
 
     fill_in "Jméno", with: @volunteer.Jméno
     fill_in "Mail", with: @volunteer.Mail
     fill_in "Příjmení", with: @volunteer.Příjmení
     fill_in "Telefon", with: @volunteer.Telefon
-    click_on "Create Volunteer"
+    click_on "Vytvořit Dobrovolníka"
 
     assert_text "Volunteer was successfully created"
     click_on "Back"
@@ -32,7 +32,7 @@ class VolunteersTest < ApplicationSystemTestCase
     fill_in "Mail", with: @volunteer.Mail
     fill_in "Příjmení", with: @volunteer.Příjmení
     fill_in "Telefon", with: @volunteer.Telefon
-    click_on "Update Volunteer"
+    click_on "Upravit Dobrovolníka"
 
     assert_text "Volunteer was successfully updated"
     click_on "Back"

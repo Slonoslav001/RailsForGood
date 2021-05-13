@@ -21,9 +21,9 @@
         <td><%= volunteer.Jméno %></td>
         <td><%= volunteer.Mail %></td>
         <td><%= volunteer.Telefon %></td>
-        <td><%= link_to 'Show', volunteer %></td>
-        <td><%= link_to 'Edit', edit_volunteer_path(volunteer) %></td>
-        <td><%= link_to 'Destroy', volunteer, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Zobrazit', volunteer %></td>
+        <td><%= link_to 'Upravit', edit_volunteer_path(volunteer) %></td>
+        <td><%= link_to 'Smazat', volunteer, method: :delete, data: { confirm: 'Jste si jistý?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -31,4 +31,4 @@
 
 <br>
 
-<%= link_to 'New Volunteer', new_volunteer_path, class:"btn btn-secondary" %>
+<%= link_to 'Nový Dobrovolník', new_volunteer_path, class:"btn btn-secondary" %>

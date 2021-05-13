@@ -25,7 +25,7 @@ class VolunteersController < ApplicationController
 
     respond_to do |format|
       if @volunteer.save
-        format.html { redirect_to @volunteer, notice: "Volunteer was successfully created." }
+        format.html { redirect_to @volunteer, notice: "Účet dobrovolníka byl úspěšně vytvořen." }
         format.json { render :show, status: :created, location: @volunteer }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class VolunteersController < ApplicationController
   def update
     respond_to do |format|
       if @volunteer.update(volunteer_params)
-        format.html { redirect_to @volunteer, notice: "Volunteer was successfully updated." }
+        format.html { redirect_to @volunteer, notice: "Účet dobrovolníka byl úspěšně upraven." }
         format.json { render :show, status: :ok, location: @volunteer }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -51,7 +51,7 @@ class VolunteersController < ApplicationController
   def destroy
     @volunteer.destroy
     respond_to do |format|
-      format.html { redirect_to volunteers_url, notice: "Volunteer was successfully destroyed." }
+      format.html { redirect_to volunteers_url, notice: "Účet dobrovolníka byl úspěšně smazán." }
       format.json { head :no_content }
     end
   end
