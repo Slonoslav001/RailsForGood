@@ -1,11 +1,6 @@
 class VolunteersController < ApplicationController
   before_action :set_volunteer, only: %i[ show edit update destroy ]
 
-  # GET /volunteers or /volunteers.json
-  def index
-    @volunteers = Volunteer.all
-  end
-
   # GET /volunteers/1 or /volunteers/1.json
   def show
   end
@@ -46,16 +41,7 @@ class VolunteersController < ApplicationController
       end
     end
   end
-
-  # DELETE /volunteers/1 or /volunteers/1.json
-  def destroy
-    @volunteer.destroy
-    respond_to do |format|
-      format.html { redirect_to volunteers_url, notice: "Účet dobrovolníka byl úspěšně smazán." }
-      format.json { head :no_content }
-    end
-  end
-
+  
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_volunteer

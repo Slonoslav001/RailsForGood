@@ -1,34 +1,3 @@
-<p id="notice"><%= notice %></p>
-
-<h1>Seznam Dobrovolníků</h1>
-
-<table class="table table-hover table table-striped table table-bordered">
-  <thead class="table-dark">
-    <tr>
-      <hr>
-      <th>Příjmení</th>
-      <th>Jméno</th>
-      <th>Mail</th>
-      <th>Telefon</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @volunteers.each do |volunteer| %>
-      <tr>
-        <td><%= volunteer.Příjmení %></td>
-        <td><%= volunteer.Jméno %></td>
-        <td><%= volunteer.Mail %></td>
-        <td><%= volunteer.Telefon %></td>
-        <td><%= link_to 'Zobrazit', volunteer %></td>
-        <td><%= link_to 'Upravit', edit_volunteer_path(volunteer) %></td>
-        <td><%= link_to 'Smazat', volunteer, method: :delete, data: { confirm: 'Jste si jistý?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
+<h1>Tato stránka není přístupná</h1>
 <br>
-
-<%= link_to 'Nový Dobrovolník', new_volunteer_path, class:"btn btn-secondary" %>
+<p>Pokud jste admin, přihlaste se pomocí svých přihlašovacích údajů na /admin</p>
