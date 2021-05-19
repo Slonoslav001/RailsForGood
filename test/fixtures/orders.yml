@@ -1,0 +1,21 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  Jméno: MyString
+  Příjmení: MyString
+  Město: MyString
+  Ulice: MyString
+  ČP: MyString
+  PSČ: MyString
+  Žádost: MyString
+  Poznámka: MyString
+
+two:
+  Jméno: MyString
+  Příjmení: MyString
+  Město: MyString
+  Ulice: MyString
+  ČP: MyString
+  PSČ: MyString
+  Žádost: MyString
+  Poznámka: MyString

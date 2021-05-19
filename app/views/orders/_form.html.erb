@@ -1,10 +1,10 @@
-<%= form_with(model: client) do |form| %>
-  <% if client.errors.any? %>
+<%= form_with(model: order) do |form| %>
+  <% if order.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(client.errors.count, "error") %> prohibited this client from being saved:</h2>
+      <h2><%= pluralize(order.errors.count, "error") %> prohibited this order from being saved:</h2>
 
       <ul>
-        <% client.errors.each do |error| %>
+        <% order.errors.each do |error| %>
           <li><%= error.full_message %></li>
         <% end %>
       </ul>
@@ -20,6 +20,7 @@
     </div>
   </div>
   <br>
+
   <div class = "row">
     <div class="field mb-3 col form-group">
       <%= form.text_field :Město, class:"form-control", placeholder:"Město" %>
@@ -38,6 +39,10 @@
     </div>
   </div>
   <br>
+
+  <div class="field mb-3 col form-group">
+    <%= form.text_field :Žádost, class:"form-control", placeholder:"Žádost" %>
+  </div>
   <div class="field mb-3 col form-group">
     <%= form.text_field :Poznámka, class:"form-control", placeholder:"Poznámka" %>
   </div>
