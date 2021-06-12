@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :sign_ups
   resources :orders
   resources :clients
   devise_for :admin_users, ActiveAdmin::Devise.config
