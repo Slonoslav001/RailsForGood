@@ -20,7 +20,7 @@ class VolunteersController < ApplicationController
 
     respond_to do |format|
       if @volunteer.save
-        MagicLinkMailer.with(volunteer: @volunteer).welcome_email.deliver_now
+        MagicLinkMailer.with(volunteer: @volunteer).welcome_email.deliver_later
         format.html { redirect_to @volunteer, notice: "Účet dobrovolníka byl úspěšně vytvořen." }
         format.json { render :show, status: :created, location: @volunteer }
       else
