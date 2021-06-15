@@ -1,24 +1,12 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Ruby 2.7.3
+Rails 6.1.3.2
 
-Things you may want to cover:
+Windows 10 / macOS Big Sur - 11.3.1.
 
-* Ruby version
+Database SQlite3
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Přistup k admin sekci
+http://127.0.0.1:3000/admin
+admin@example.com heslo: password
