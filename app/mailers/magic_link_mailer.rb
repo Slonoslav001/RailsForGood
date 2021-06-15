@@ -6,7 +6,7 @@ class MagicLinkMailer < ApplicationMailer
     mail(to: @volunteer.Mail, subject: 'Vítejte!')
   end
 
-  def magic_link
+  def magic_link(volunteer)
     @volunteer = params[:volunteer]
     mail(to: @volunteer.Mail, subject: "Nová žádost")
   end
